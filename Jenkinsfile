@@ -56,7 +56,7 @@ pipeline{
 
                 //Publish image
 
-                bat "docker push wakin2k/docker-jenkins ${image_full_name}"
+                bat "docker push ${image_full_name}"
 
 
             }
