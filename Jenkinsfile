@@ -35,7 +35,7 @@ pipeline{
                     echo "Image name: ${image_full_name}"
 
                     //Build Image
-                    bat "docker build . -t docker-jenkins"
+                    bat "docker build -t ${image_full_name} ."
 
 
                 }
